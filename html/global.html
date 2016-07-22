@@ -1,0 +1,606 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">    <title>Chop Chop - Little user interface patterns to get us going</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../build/vendor/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../build/vendor/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../build/vendor/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../build/vendor/favicons/manifest.json">
+<link rel="mask-icon" href="../build/vendor/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+    <!-- Template: _styles !-->
+<link rel="stylesheet" type="text/css" href="../build/vendor/normalize.css/normalize.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../build/css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../build/css/chopchop-ui.css" media="screen" />
+<!-- End template: _styles !--></head>
+<body>
+
+                <div class="cc-toolbar">
+                <a href="global.html#" class="site-navigation__toggle cc-readout" data-cc-action="toggle" data-cc-target="navigation">Menu</a>
+                <span class="cc-readout cc-readout--mq"></span>
+            </div>
+
+        <div class="site-wrapper cc-site-wrapper">
+
+            <nav class="site-navigation" id="navigation">
+                <div class="block-content site-navigation__content">
+                    <nav class=" nav-global nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="global/global.html"
+                id="Global-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Global-content">
+                Global <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Global-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Global-title">
+                                <li class="level1"><a href="global/color.html">Color</a></li>
+                                <li class="level1"><a href="global/logo.html">Logo</a></li>
+                                <li class="level1"><a href="global/typography.html">Typography</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-mixin nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="global/mixin.html"
+                id="Mixin-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Mixin-content">
+                Mixin <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Mixin-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Mixin-title">
+                                <li class="level1"><a href="mixin/breakpoint.html">Breakpoint</a></li>
+                                <li class="level1"><a href="mixin/grid.html">Grid</a></li>
+                                <li class="level1"><a href="mixin/shape.html">Shape</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-utility nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="global/utility.html"
+                id="Utility-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Utility-content">
+                Utility <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Utility-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Utility-title">
+                                <li class="level1"><a href="utility/align.html">Align</a></li>
+                                <li class="level1"><a href="utility/block.html">Block</a></li>
+                                <li class="level1"><a href="utility/color.html">Color</a></li>
+                                <li class="level1"><a href="utility/container.html">Container</a></li>
+                                <li class="level1"><a href="utility/embed-container.html">Embed container</a></li>
+                                <li class="level1"><a href="utility/grid.html">Grid</a></li>
+                                <li class="level1"><a href="utility/section.html">Section</a></li>
+                                <li class="level1"><a href="utility/visible.html">Visible</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-atom nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="global/atom.html"
+                id="Atom-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Atom-content">
+                Atom <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Atom-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Atom-title">
+                                <li class="level1"><a href="atom/blockquote.html">Blockquote</a></li>
+                                <li class="level1"><a href="atom/button.html">Button</a></li>
+                                <li class="level1"><a href="atom/form.html">Form</a></li>
+                                <li class="level1"><a href="atom/heading.html">Heading</a></li>
+                                <li class="level1"><a href="atom/horizontal-rule.html">Horizontal rule</a></li>
+                                <li class="level1"><a href="atom/icons.html">Icons</a></li>
+                                <li class="level1"><a href="atom/image.html">Image</a></li>
+                                <li class="level1"><a href="atom/inline.html">Inline</a></li>
+                                <li class="level1"><a href="atom/list.html">List</a></li>
+                                <li class="level1"><a href="atom/paragraph.html">Paragraph</a></li>
+                                <li class="level1"><a href="atom/pre.html">Pre</a></li>
+                                <li class="level1"><a href="atom/table.html">Table</a></li>
+                                <li class="level1"><a href="atom/tag.html">Tag</a></li>
+                                <li class="level1"><a href="atom/timestamp.html">Timestamp</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-molecule nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="global/molecule.html"
+                id="Molecule-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Molecule-content">
+                Molecule <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Molecule-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Molecule-title">
+                                <li class="level1"><a href="molecule/accordion.html">Accordion</a></li>
+                                <li class="level1"><a href="molecule/alert.html">Alert</a></li>
+                                <li class="level1"><a href="molecule/breadcrumb.html">Breadcrumb</a></li>
+                                <li class="level1"><a href="molecule/card.html">Card</a></li>
+                                <li class="level1"><a href="molecule/drawer.html">Drawer</a></li>
+                                <li class="level1"><a href="molecule/field-group.html">Field group</a></li>
+                                <li class="level1"><a href="molecule/flag.html">Flag</a></li>
+                                <li class="level1"><a href="molecule/logo.html">Logo</a></li>
+                                <li class="level1"><a href="molecule/modal.html">Modal</a></li>
+                                <li class="level1"><a href="molecule/nav.html">Nav</a></li>
+                                <li class="level1"><a href="molecule/pagination.html">Pagination</a></li>
+                                <li class="level1"><a href="molecule/tabs.html">Tabs</a></li>
+                                <li class="level1"><a href="molecule/title.html">Title</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-organism nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="global/organism.html"
+                id="Organism-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Organism-content">
+                Organism <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Organism-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Organism-title">
+                                <li class="level1"><a href="organism/footer.html">Footer</a></li>
+                                <li class="level1"><a href="organism/header.html">Header</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-template nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="global/template.html"
+                id="Template-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Template-content">
+                Template <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Template-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Template-title">
+                                <li class="level1"><a href="template/homepage.html">Homepage</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+                </div>
+            </nav>
+
+            <main>
+    
+              <section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Colour</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="global/color.html" class="micro">Permalink</a></li>
+                        <li><a href="global/color%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup><div class="grid g-gutter">
+            <div class="g-col-xs-12"><h3>grey</h3></div>            <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-grey">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>grey</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-grey-darker">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>grey darker</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-grey-dark">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>grey dark</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-grey-light">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>grey light</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-grey-lighter">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>grey lighter</small>
+                    </div>
+                </div>
+            </div>
+                        <div class="g-col-xs-12"><h3>black</h3></div>            <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-black">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>black</small>
+                    </div>
+                </div>
+            </div>
+                        <div class="g-col-xs-12"><h3>white</h3></div>            <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-white">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>white</small>
+                    </div>
+                </div>
+            </div>
+                        <div class="g-col-xs-12"><h3>social</h3></div>            <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-social-twitter">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>social twitter</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-social-facebook">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>social facebook</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-social-google">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>social google</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-social-pinterest">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>social pinterest</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-social-instagram">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>social instagram</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-social-vimeo">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>social vimeo</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-social-linkedin">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>social linkedin</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-social-youtube">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>social youtube</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-social-tumblr">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>social tumblr</small>
+                    </div>
+                </div>
+            </div>
+                        <div class="g-col-xs-12"><h3>brand</h3></div>            <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-brand-pink">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>brand pink</small>
+                    </div>
+                </div>
+            </div>
+                        <div class="g-col-xs-12"><h3>success</h3></div>            <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-success">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>success</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-success-light">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>success light</small>
+                    </div>
+                </div>
+            </div>
+                        <div class="g-col-xs-12"><h3>error</h3></div>            <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-error">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>error</small>
+                    </div>
+                </div>
+            </div>
+                                    <div class="g-col-xs-6 g-col-sm-4 g-col-md-3 g-col-xl-2">
+                <div class="card cc-card--swatch">
+                    <div class="u-block-xl u-fill-error-light">
+
+                    </div>
+                    <div class="card__footer">
+                        <small>error light</small>
+                    </div>
+                </div>
+            </div>
+            </div> <!-- close the last cc-vars div -->
+</div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Logo</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="global/logo/1-logo.html" class="micro">Permalink</a></li>
+                        <li><a href="global/logo/1-logo%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<p><img src="../build/img/logos/logo.png" class="u-img-responsive" width="260" height="260" /></p>
+</div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Logo Variations</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="global/logo/2-variation.html" class="micro">Permalink</a></li>
+                        <li><a href="global/logo/2-variation%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<div class="grid g-gutter">
+    <div class="g-col-sm-6">
+        <h4>Print logo</h4>
+        <img src="../build/img/logos/logo_print.gif" class="u-img-responsive" width="200" height="200" />
+    </div>
+    <div class="g-col-sm-6">
+        <h4>Email logo</h4>
+        <img src="../build/img/logos/logo_email.gif" class="u-img-responsive" width="200" height="200" />
+    </div>
+</div>
+</div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Favicon</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="global/logo/3-favicon.html" class="micro">Permalink</a></li>
+                        <li><a href="global/logo/3-favicon%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<div class="grid g-gutter">
+    <div class="g-col-sm-6">
+        <img src="../build/vendor/favicons/favicon-16x16.png" class="u-img-responsive" width="16" height="16" />
+        <span>16x16</span>
+    </div>
+    <div class="g-col-sm-6">
+        <img src="../build/vendor/favicons/favicon-32x32.png" class="u-img-responsive" width="32" height="32" />
+        <span>32x32</span>
+    </div>
+</div>
+</div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Apple Icons</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="global/logo/4-apple.html" class="micro">Permalink</a></li>
+                        <li><a href="global/logo/4-apple%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<ul class="u-list-unstyled">
+    <li>
+        <img src="../build/vendor/favicons/apple-touch-icon.png" class="u-img-responsive" width="180" height="180" />
+        <span>180x180</span>
+    </li>
+</ul>
+</div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Android Icons</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="global/logo/5-android.html" class="micro">Permalink</a></li>
+                        <li><a href="global/logo/5-android%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<div class="grid g-gutter">
+    <div class="g-col-sm-6">
+        <h4>Android Home Screen</h4>
+        <img src="../build/vendor/favicons/android-chrome-192x192.png" class="u-img-responsive" width="192" height="192" />
+        <span>192x192</span>
+    </div>
+    <div class="g-col-sm-6">
+        <h4>Windows Tile (Reverse)</h4>
+        <img src="../build/vendor/favicons/mstile-150x150.png" class="u-img-responsive" width="144" height="144" />
+        <span>150x150</span>
+    </div>
+</div>
+</div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Image Placeholder</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="global/logo/6-placeholder.html" class="micro">Permalink</a></li>
+                        <li><a href="global/logo/6-placeholder%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<p><img src="../build/img/placeholders/300x300.jpg" class="u-img-responsive" width="300" height="300" /></p>
+</div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Font <code>.u-font-family</code></h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="global/typography/1-font.html" class="micro">Permalink</a></li>
+                        <li><a href="global/typography/1-font%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<div class="u-font-family">
+    a b c d e f g h i j k l m n o p q r s t u v w x y z <br>
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br>
+    1 2 3 4 5 6 7 8 9 0
+</div></div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Typography</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="global/typography/2-tester.html" class="micro">Permalink</a></li>
+                        <li><a href="global/typography/2-tester%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<div class="u-container-sm">
+    <h1>I am the big heading</h1>
+
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In <a href="global.html#">scelerisque sem at dolor</a>. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. <b>This is bold</b>. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. <i>This is an i tag</i>. Quisque volutpat condimentum velit.</p>
+
+    <p><em>This is an em tag</em> ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. <i>Aenean quam</i>. Nunc feugiat mi a tellus consequat imperdiet. <b>Fusce ac turpis quis ligula lacinia aliquet</b>. Vestibulum sapien. Proin quam. <b>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis</b>. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. <i>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</i>. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.</p>
+
+    <h2>I am a second level heading</h2>
+
+    <p><em>This is an em tag</em> ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. <i>Aenean quam</i>. Nunc feugiat mi a tellus consequat imperdiet. <b>Fusce ac turpis quis ligula lacinia aliquet</b>. Vestibulum sapien. Proin quam. <b>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis</b>. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. <i>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</i>. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.</p>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit</li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+    </ul>
+
+    <p><a href="global.html#" class="btn">I am a button</a></p>
+
+    <hr/>
+
+    <h2>I am a second level heading</h2>
+
+    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. <b>This is bold</b>. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. <i>This is an i tag</i>. Quisque volutpat condimentum velit.</p>
+
+    <h3>I am a third level heading</h3>
+
+    <p>Shall we have a very important quote from someone famous?</p>
+
+    <blockquote>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. <i>Aenean quam</i>. Nunc feugiat mi a tellus consequat imperdiet. <b>Fusce ac turpis quis ligula lacinia aliquet</b>. Vestibulum sapien. Proin quam. <b>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis</b>. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. <i>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</i>. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+
+    <h3>I am a third level heading</h3>
+
+    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. <b>This is bold</b>. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. <i>This is an i tag</i>. Quisque volutpat condimentum velit.</p>
+
+    <h4>I am a fourth level heading</h4>
+
+    <figure>
+        <img src="http://placehold.it/700x200" alt="Image Demo" />
+        <figcaption>Fig2. - Image Demo.</figcaption>
+    </figure>
+
+    <ol>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit</li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+    </ol>
+
+    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. <b>This is bold</b>. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. <i>This is an i tag</i>. Quisque volutpat condimentum velit.</p>
+</div></div></section>
+                </main>
+
+        </div><!--/#wrapper -->
+    
+    <!-- Template: _js !-->
+<script src="../build/vendor/svgxuse/svgxuse.js" async></script>
+<!--[if IE 9]>
+    <script src="/html/../build/vendor/svg4everybody/svg4everybody.js" async></script>
+    <script async>svg4everybody(); // run it now or whenever you are ready</script>
+<![endif]-->
+<script src="../build/vendor/picturefill/picturefill.js" async></script>
+<script src="../build/vendor/jquery/jquery.js"></script>
+<script src="../build/js/chopchop.lib.js"></script>
+<script src="../build/js/priority-nav.js"></script>
+<script src="../build/js/script.js"></script>
+<!-- End template: _js !-->
+</body>
+</html>

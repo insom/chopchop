@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">    <title>Chop Chop - Little user interface patterns to get us going</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../build/vendor/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../../build/vendor/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../build/vendor/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../build/vendor/favicons/manifest.json">
+<link rel="mask-icon" href="../../build/vendor/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+    <!-- Template: _styles !-->
+<link rel="stylesheet" type="text/css" href="../../build/vendor/normalize.css/normalize.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../build/css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../build/css/chopchop-ui.css" media="screen" />
+<!-- End template: _styles !--></head>
+<body>
+
+                <div class="cc-toolbar">
+                <a href="list.html#" class="site-navigation__toggle cc-readout" data-cc-action="toggle" data-cc-target="navigation">Menu</a>
+                <span class="cc-readout cc-readout--mq"></span>
+            </div>
+
+        <div class="site-wrapper cc-site-wrapper">
+
+            <nav class="site-navigation" id="navigation">
+                <div class="block-content site-navigation__content">
+                    <nav class=" nav-global nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="list/global.html"
+                id="Global-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Global-content">
+                Global <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Global-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Global-title">
+                                <li class="level1"><a href="../global/color.html">Color</a></li>
+                                <li class="level1"><a href="../global/logo.html">Logo</a></li>
+                                <li class="level1"><a href="../global/typography.html">Typography</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-mixin nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="list/mixin.html"
+                id="Mixin-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Mixin-content">
+                Mixin <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Mixin-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Mixin-title">
+                                <li class="level1"><a href="../mixin/breakpoint.html">Breakpoint</a></li>
+                                <li class="level1"><a href="../mixin/grid.html">Grid</a></li>
+                                <li class="level1"><a href="../mixin/shape.html">Shape</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-utility nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="list/utility.html"
+                id="Utility-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Utility-content">
+                Utility <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Utility-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Utility-title">
+                                <li class="level1"><a href="../utility/align.html">Align</a></li>
+                                <li class="level1"><a href="../utility/block.html">Block</a></li>
+                                <li class="level1"><a href="../utility/color.html">Color</a></li>
+                                <li class="level1"><a href="../utility/container.html">Container</a></li>
+                                <li class="level1"><a href="../utility/embed-container.html">Embed container</a></li>
+                                <li class="level1"><a href="../utility/grid.html">Grid</a></li>
+                                <li class="level1"><a href="../utility/section.html">Section</a></li>
+                                <li class="level1"><a href="../utility/visible.html">Visible</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-atom nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="list/atom.html"
+                id="Atom-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Atom-content">
+                Atom <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Atom-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Atom-title">
+                                <li class="level1"><a href="blockquote.html">Blockquote</a></li>
+                                <li class="level1"><a href="button.html">Button</a></li>
+                                <li class="level1"><a href="form.html">Form</a></li>
+                                <li class="level1"><a href="heading.html">Heading</a></li>
+                                <li class="level1"><a href="horizontal-rule.html">Horizontal rule</a></li>
+                                <li class="level1"><a href="icons.html">Icons</a></li>
+                                <li class="level1"><a href="image.html">Image</a></li>
+                                <li class="level1"><a href="inline.html">Inline</a></li>
+                                <li class="level1"><a href="list.html">List</a></li>
+                                <li class="level1"><a href="paragraph.html">Paragraph</a></li>
+                                <li class="level1"><a href="pre.html">Pre</a></li>
+                                <li class="level1"><a href="table.html">Table</a></li>
+                                <li class="level1"><a href="tag.html">Tag</a></li>
+                                <li class="level1"><a href="timestamp.html">Timestamp</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-molecule nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="list/molecule.html"
+                id="Molecule-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Molecule-content">
+                Molecule <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Molecule-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Molecule-title">
+                                <li class="level1"><a href="../molecule/accordion.html">Accordion</a></li>
+                                <li class="level1"><a href="../molecule/alert.html">Alert</a></li>
+                                <li class="level1"><a href="../molecule/breadcrumb.html">Breadcrumb</a></li>
+                                <li class="level1"><a href="../molecule/card.html">Card</a></li>
+                                <li class="level1"><a href="../molecule/drawer.html">Drawer</a></li>
+                                <li class="level1"><a href="../molecule/field-group.html">Field group</a></li>
+                                <li class="level1"><a href="../molecule/flag.html">Flag</a></li>
+                                <li class="level1"><a href="../molecule/logo.html">Logo</a></li>
+                                <li class="level1"><a href="../molecule/modal.html">Modal</a></li>
+                                <li class="level1"><a href="../molecule/nav.html">Nav</a></li>
+                                <li class="level1"><a href="../molecule/pagination.html">Pagination</a></li>
+                                <li class="level1"><a href="../molecule/tabs.html">Tabs</a></li>
+                                <li class="level1"><a href="../molecule/title.html">Title</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-organism nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="list/organism.html"
+                id="Organism-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Organism-content">
+                Organism <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Organism-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Organism-title">
+                                <li class="level1"><a href="../organism/footer.html">Footer</a></li>
+                                <li class="level1"><a href="../organism/header.html">Header</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class=" nav-template nav-collapse">
+    <ul class="nav nav--pills">
+        <li class="level0 parent">
+            <a href="list/template.html"
+                id="Template-title"
+                data-cc-group="cc-nav-title"
+                data-cc-action="activate"
+                data-cc-target="Template-content">
+                Template <span class="shape-hook"></span>
+            </a>
+            <ul class="nav nav--pills child"
+                id="Template-content"
+                data-cc-group="cc-nav-content"
+                data-cc-cascade-activate="Template-title">
+                                <li class="level1"><a href="../template/homepage.html">Homepage</a></li>
+                            </ul>
+        </li>
+    </ul>
+</nav>
+                </div>
+            </nav>
+
+            <main>
+    
+              <section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Unordered List</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="list/1-unordered.html" class="micro">Permalink</a></li>
+                        <li><a href="list/1-unordered%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<ul>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+        <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+        </ul>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+</ul>
+</div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Ordered List</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="list/2-ordered.html" class="micro">Permalink</a></li>
+                        <li><a href="list/2-ordered%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<ol>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+        <ol>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+        </ol>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+</ol>
+</div></section><section class="cc-section"><div class="u-container"><hgroup class="cc-title cc-title--actions"><div class="title__titles"><h2 class="cc-title__main">Definition List</h2></div>
+                <div class="cc-title__actions">
+                    <ul>
+                        <li><a href="list/3-definition.html" class="micro">Permalink</a></li>
+                        <li><a href="list/3-definition%3Fpreview.html" class="micro">Preview</a></li>
+                    </ul>
+                </div></hgroup>
+<dl>
+    <dt>This is a term.</dt>
+    <dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
+    <dt>Here is another term.</dt>
+    <dd>And it gets a definition too, which is this line.</dd>
+    <dt>Here is term that shares a definition with the term below.</dt>
+    <dt>Here is a defined term.</dt>
+    <dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+</dl>
+</div></section>
+                </main>
+
+        </div><!--/#wrapper -->
+    
+    <!-- Template: _js !-->
+<script src="../../build/vendor/svgxuse/svgxuse.js" async></script>
+<!--[if IE 9]>
+    <script src="/html/../build/vendor/svg4everybody/svg4everybody.js" async></script>
+    <script async>svg4everybody(); // run it now or whenever you are ready</script>
+<![endif]-->
+<script src="../../build/vendor/picturefill/picturefill.js" async></script>
+<script src="../../build/vendor/jquery/jquery.js"></script>
+<script src="../../build/js/chopchop.lib.js"></script>
+<script src="../../build/js/priority-nav.js"></script>
+<script src="../../build/js/script.js"></script>
+<!-- End template: _js !-->
+</body>
+</html>
